@@ -1,6 +1,6 @@
 export async function getLogs() {
     const headersList = {
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjU0ODgwMTAsImlzcyI6InRvbW8ifQ.3keU7SsYZhuLSryOC9_ZGXGrE94Ypevz9vLkoTrarZg"
+        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MjU2NjEwNjgsImlzcyI6InRvbW8ifQ._E1K5LtRCtnrgtXw06x1fqrphYamxl4R1KdyCcbjCao"
     };
 
     try {
