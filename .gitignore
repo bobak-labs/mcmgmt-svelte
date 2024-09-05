@@ -28,7 +28,6 @@ mcmgmt-api
 mcmgmt-*-linux-amd64.tar.gz
 
 # Logs
-logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -136,7 +135,7 @@ dist
 # Docusaurus cache and generated files
 .docusaurus
 
-# Serverless directories
+# Serverless directlories
 .serverless/
 
 # FuseBox cache
