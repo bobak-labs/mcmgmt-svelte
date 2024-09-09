@@ -14,9 +14,9 @@
     </NavBrand>
     <span class="ml-2 text-xl font-semibold dark:text-white">Bobak Labs mcmgmt</span>
     <NavUl class="space-x-4" {activeUrl}>
-        <NavLi href="/login">Login</NavLi>
-        <NavLi href="/about">About</NavLi>
-        <NavLi href="/docs">Docs</NavLi>
+        <NavLi href="/login" activeClass="sm:bg-transparent bg-purple-500 text-amber-50">Login</NavLi>
+        <NavLi href="/about" activeClass="lg:bg-transparent bg-purple-500 text-amber-50">About</NavLi>
+        <NavLi href="/docs" activeClass="lg:bg-transparent bg-purple-500 text-amber-50">Docs</NavLi>
     </NavUl>
     <NavHamburger></NavHamburger>
     <DarkMode class="ml-4" />

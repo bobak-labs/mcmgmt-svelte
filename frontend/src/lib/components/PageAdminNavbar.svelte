@@ -14,10 +14,10 @@
     </NavBrand>
     <span class="ml-2 text-xl font-semibold dark:text-white">Bobak Labs mcmgmt</span>
     <NavUl class="space-x-4" {activeUrl}>
-      <NavLi href="/">Home</NavLi>
-      <NavLi href="/about">About</NavLi>
-      <NavLi href="/dashboard">Dashboard</NavLi>
-      <NavLi href="/docs">Docs</NavLi>
+      <NavLi href="/home" activeClass="sm:bg-transparent bg-purple-500 text-amber-50">Home</NavLi>
+      <NavLi href="/about" activeClass="sm:bg-transparent bg-purple-500 text-amber-50">About</NavLi>
+      <NavLi href="/dashboard" activeClass="sm:bg-transparent bg-purple-500 text-amber-50">Dashboard</NavLi>
+      <NavLi href="/docs" activeClass="sm:bg-transparent bg-purple-500 text-amber-50">Docs</NavLi>
       <NavLi >Log Out</NavLi>
     </NavUl>
     <NavHamburger></NavHamburger>

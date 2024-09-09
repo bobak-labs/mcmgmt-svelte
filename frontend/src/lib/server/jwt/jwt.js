@@ -4,7 +4,7 @@
 //  * @returns {string|null} JWT token if exists, otherwise null.
 //  */
 export function getTokenFromCookies(request) {
-    console.log(request); // Log the entire request object
+    // console.log(request); // Log the entire request object
     const cookieHeader = request.headers?.get('cookie') || '';
     const cookies = parseCookies(cookieHeader);
     return cookies['jwt']; // Replace 'jwt' with your actual cookie name
@@ -60,7 +60,7 @@ export function parseCookies(cookieHeader) {
 export function setJWT(cookies, token) {
     cookies.set('jwt', token, {
         httpOnly: true,  // to prevent client-side access
-        secure: true,    // ensure it's sent only over HTTPS
+        secure: false,    // ensure it's sent only over HTTPS
         sameSite: 'strict', // strict cookie policy
         path: '/',
         maxAge: 60 * 60 * 24 * 7 // 1 week expiration

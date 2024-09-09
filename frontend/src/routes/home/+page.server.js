@@ -1,29 +1,3 @@
-// import { verifyToken } from '../../lib/server/jwt/auth.js';
-// import { getTokenFromCookies } from '../../lib/server/jwt/jwt.js'
-
-// export const actions = {
-//     default: async ({ request,cookies }) => {
-        
-//         const token = getTokenFromCookies(request);
-//         const verified = await verifyToken(token);
-
-//         console.log("verified home", verified);
-//         console.log("token home: ",token);
-
-//         if (!verified || !token) {
-//             console.log("not verified");
-//             return new Response(null, {
-//                 status: 302,
-//                 headers: { Location: '/login' }
-//             });
-//         }
-
-//         return new Response(null, {
-//             status: 200,
-//             headers: {Location: "/home"}
-//         });
-//     }
-// }
 import { redirect } from '@sveltejs/kit';
 import { getTokenFromCookies } from '../../lib/server/jwt/jwt';
 

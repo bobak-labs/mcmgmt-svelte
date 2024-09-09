@@ -19,15 +19,14 @@ export const actions = {
         });
 
         const data = await res.json();
-        console.log(data);
+        console.log(data.response);
         
         if (!res.ok) {
             return {error: 'Invalid login credentials'};
         }
 
-        const token = data.token;
-        console.log(token);
-        setJWT(cookies,token);
+        const token = data.response.token;
+        setJWT(cookies, token);
 
         throw redirect(303,'/home');
     }
