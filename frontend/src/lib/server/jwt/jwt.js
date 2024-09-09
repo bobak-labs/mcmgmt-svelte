@@ -66,17 +66,3 @@ export function setJWT(cookies, token) {
         maxAge: 60 * 60 * 24 * 7 // 1 week expiration
     });
 }
-
-
-export async function verifyJWT(token) {
-  // This can either decode and verify the JWT locally
-  // or send a request to an API endpoint that validates the token
-  if (!token) throw new Error('No token found');
-  
-  // You could either decode it locally or send it to your API for verification
-  // For example:
-  // const res = await fetch('https://api.example.com/verify-token', {
-  //   headers: { Authorization: `Bearer ${token}` }
-  // });
-  // if (!res.ok) throw new Error('Token invalid');
-}
