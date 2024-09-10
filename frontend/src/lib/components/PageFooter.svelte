@@ -3,7 +3,7 @@
 </script>
 
 <!-- Footer -->
-<Footer class="fixed bottom-0 start-0 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+<Footer class="sticky bottom-0 start-0 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
     <FooterCopyright href="/" by="Bobak Labs™" year={2024} />
     <FooterLinkGroup ulClass="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
         <FooterLink href="/">About</FooterLink>

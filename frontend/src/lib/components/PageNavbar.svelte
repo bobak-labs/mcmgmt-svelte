@@ -15,7 +15,7 @@
 </style>
 
 <!-- Fixed Navbar at the top -->
-<Navbar class="justify-between items-center fixed top-0 left-0 w-full bg-white shadow-md dark:bg-gray-800 dark:border-gray-600 z-30 px-4">
+<Navbar class="flex flex-col justify-end items-center sticky py-8 top-0 left-0 w-full bg-white shadow-md dark:bg-gray-800 dark:border-gray-600 z-30 px-4">
     <NavBrand href="/">
       <img src="https://avatars.githubusercontent.com/u/179721646?s=400&u=482a5306290e9eaf3e8a1a69b3e00a943f28d2d6&v=4" class="h-16" alt="Bobak Labs Logo" />
     </NavBrand>
