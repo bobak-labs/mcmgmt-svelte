@@ -10,7 +10,7 @@
 </script>
 
 <!-- Sidebar container with fixed position and scrollable content -->
-<ul class="flex flex-col p-0 m-0 space-y-2 w-14 md:w-64 h-screen fixed overflow-y-auto bg-gray-300 dark:bg-gray-900">
+<ul class="py-4 flex flex-col p-0 m-0 space-y-4 w-14 md:w-64 h-screen fixed overflow-y-auto bg-gray-300 dark:bg-gray-900">
 	<SidebarLi svgIcon={infoIcon} displayName="Dashboard" endpoint="/dashboard" />
 	<SidebarLi svgIcon={serverIcon} displayName="Start/Stop Server" endpoint="/dashboard/power" />
 	<SidebarLi svgIcon={backupIcon} displayName="Backup Manager" endpoint="/dashboard/backup" />
