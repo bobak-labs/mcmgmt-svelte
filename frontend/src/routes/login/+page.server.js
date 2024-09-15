@@ -28,6 +28,6 @@ export const actions = {
         const token = data.response.token;
         setJWT(cookies, token);
 
-        throw redirect(303,'/home');
+        return redirect(303,'/home');
     }
 }

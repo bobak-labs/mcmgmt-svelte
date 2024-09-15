@@ -4,8 +4,9 @@
   import PageFooter from '../lib/components/PageFooter.svelte';
   import PageNavbar from '../lib/components/PageNavbar.svelte';
 
+  let navbarType;
   $: navbarType = $page.data.navbarType; // Access navbarType from the page store
-
+  console.log($page.data.navbarType);
 </script>
 
 <style>
@@ -23,14 +24,13 @@
     flex: 1; /* Ensure main content grows to fill available space */
   }
 </style>
+<!-- <h1>{navbarType}, {$page.data.navbarType}</h1> -->
+<!-- Main layout wrapper -->
+<PageNavbar {navbarType} class="fixed" />
 
-<div class="flex flex-col min-h-screen">
-  <!-- Main layout wrapper -->
-  <PageNavbar {navbarType} class="fixed" />
-  
-  <main class="flex-1"> <!-- Adjust margin-top to ensure content is not hidden behind the navbar -->
-    <slot />
-  </main>
-  
-  <PageFooter /> <!-- Footer positioned relative to document flow -->
-</div>
+<main> <!-- Adjust margin-top to ensure content is not hidden behind the navbar -->
+  <slot />
+</main>
+
+<PageFooter /> <!-- Footer positioned relative to document flow -->
+

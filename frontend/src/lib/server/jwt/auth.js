@@ -16,6 +16,11 @@ export function logout() {
 }
 
 export async function verifyToken(token) {
+    console.log("token",token);
+    if (!token) {
+        console.log("Returning null");
+        return null;
+    }
     try {
         const SECRET_KEY = process.env.JWT_SECRET;
         if (!SECRET_KEY) throw new Error('SECRET_KEY not set');

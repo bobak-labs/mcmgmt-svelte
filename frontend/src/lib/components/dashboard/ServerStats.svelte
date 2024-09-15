@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+  <div class="flex-row grid md:grid-cols-3 sm:grid-cols-1 gap-6">
     <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg">
       <h3 class="text-lg font-medium text-gray-900 dark:text-gray-100">Container Image</h3>
       <p class="text-gray-900 dark:text-gray-300 mt-2">{serverStats.containerImage}</p>

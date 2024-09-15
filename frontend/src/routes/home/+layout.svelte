@@ -8,11 +8,6 @@
   
 </script>
 
-<div class="flex flex-col min-h-screen">
-  <!-- Home-specific Navbar if needed -->
-  
-  <!-- Content slot -->
-  <main class="flex-1">
-    <slot />
-  </main>
-</div>
+
+<slot />
+

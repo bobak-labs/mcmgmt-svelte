@@ -5,7 +5,7 @@
     // This could be replaced with actual data fetching logic
     // For example, you could use a fetch request or store
     // You might want to replace this with an API call or prop
-    $: cloudBackups = ['asdf','asdf','asdf']; // Replace this with your cloud backup data
+    $: cloudBackups = ['asdf','asdf','asdf','asdf','asdf','asdf','asdf']; // Replace this with your cloud backup data
   
     function openModal(modalId) {
       // Replace with your modal opening logic
@@ -15,7 +15,7 @@
   
 
 
-  <div class="w-full">
+
 
   <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 relative">
     <h2 class="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Cloud Sync</h2>
@@ -32,7 +32,7 @@
     
     <div class="overflow-x-auto">
 
-      <table class="rounded-md w-full text-sm text-left text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 rounded-lg">
+      <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 rounded-lg">
         <thead class="rounded-md text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-800 dark:text-gray-400">
           <tr>
             <th class="px-4 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Backup Name</th>
@@ -64,4 +64,3 @@
       Info
     </button>
   </div>
-</div>

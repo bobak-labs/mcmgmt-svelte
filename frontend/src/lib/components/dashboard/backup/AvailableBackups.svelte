@@ -19,11 +19,11 @@
 </script>
 
     
-<div class="w-full">
+<!-- <div class="w-full"> -->
 
 
     <!-- Available Backups Card -->
-    <div class="bg-white w-full dark:bg-gray-800 rounded-lg shadow-lg p-6 relative w-full sm:w-auto">
+    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 relative w-full sm:w-auto">
         <h2 class="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Available Backups</h2>
         <ul class="list-disc list-inside space-y-2">
             {#if backups.length > 0}
@@ -43,5 +43,3 @@
             class="absolute top-2 right-2 bg-gray-300 hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600 text-black dark:text-white font-semibold py-1 px-3 rounded-md">Info
         </button>
     </div>
-
-</div>

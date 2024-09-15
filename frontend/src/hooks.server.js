@@ -12,7 +12,7 @@ export const handle = async ({ event, resolve }) => {
 
     const currentRoute = '/'+ request.url.split("/")[3];
     if (currentRoute == '/') {
-      throw redirect(302,'/home')
+      return redirect(302,'/home')
     }
     // Check if the current route is public
     if (!publicRoutes.includes(currentRoute)) {
@@ -20,14 +20,18 @@ export const handle = async ({ event, resolve }) => {
 
         if (!token || token === undefined) {
             // If no token is found, redirect to the login page
-            throw redirect(302, '/login');
+            return redirect(302, '/login');
         }
 
         // Optionally, you could validate the token here if you want
         // e.g., check if it's expired or has the correct claims
+        if (!token) {
+          return redirect(302, '/login');
+        }
+
         const result = await verifyToken(token);
-        if (!result) {
-          throw redirect(302, '/login');
+        if (result === null) {
+          return redirect(302, '/login');
         }
 
     }

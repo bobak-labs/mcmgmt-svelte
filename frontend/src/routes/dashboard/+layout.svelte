@@ -1,4 +1,5 @@
 <script>
+  import { Footer } from "flowbite-svelte";
   import AdminSidebar from "../../lib/components/dashboard/AdminSidebar.svelte";
   export const navbarType = 'admin';
 </script>

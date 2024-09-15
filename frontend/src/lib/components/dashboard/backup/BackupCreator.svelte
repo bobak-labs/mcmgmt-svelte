@@ -8,7 +8,7 @@
 </script>
 
 
-<div class="w-full">
+<!-- <div class="w-full"> -->
 
 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 relative w-full sm:w-auto">
 
@@ -36,4 +36,4 @@
         Info
     </button>
 </div>
-</div>
+<!-- </div> -->

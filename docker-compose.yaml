@@ -1,0 +1,39 @@
+services:
+  backend:
+    build: ./mcmgmt-api
+    environment:
+      - ADMIN_USER="tomo"
+      - ADMIN_PASSWORD="tomo"
+      - BACKUPS_BUCKET="backups_mac_44939492192340"
+      - PROJECT_ID="asdf-431315"
+      - JWT_SECRET="1m3ioo1i312412sadflksdf54i30"
+      - GCP_SERVICE_ACCOUNT="buckets@asdf-431315.iam.gserviceaccount.com"
+    ports:
+      - 7777:7777
+  frontend:
+    build: frontend/
+    environment:
+      - JWT_SECRET="1m3ioo1i312412sadflksdf54i30"
+    ports:
+      - "3000"
+  proxy:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '4444:3000' # Public HTTP Port
+      # Add any other Stream port you want to expose
+      # - '21:21' # FTP
+
+    # Uncomment the next line if you uncomment anything in the section
+    # environment:
+      # Uncomment this if you want to change the location of
+      # the SQLite DB file within the container
+      # DB_SQLITE_FILE: "/data/database.sqlite"
+
+      # Uncomment this if IPv6 is not enabled on your host
+      # DISABLE_IPV6: 'true'
+
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
