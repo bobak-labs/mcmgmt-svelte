@@ -1,6 +1,7 @@
 <script>
     import OpDeopPlayer from "./OpDeopPlayer.svelte";
     import AdminStats from "./AdminStats.svelte";
+    import ServerProperties from "./ServerProperties.svelte";
 
     let list = [
     {
@@ -92,6 +93,7 @@
 <div class="space-y-4">
     <OpDeopPlayer {list} on:updateList={e => updatePlayerList(e.detail)} />
     <AdminStats {list} />
+    <ServerProperties />
 </div>
 
 
