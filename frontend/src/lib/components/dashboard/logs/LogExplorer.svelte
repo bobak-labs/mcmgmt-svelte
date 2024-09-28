@@ -4,8 +4,11 @@
 
 </script>
 
-<div class="flex justify-evenly gap-4 py-8">
-    {#each backupZips as b}
-        <Button color="blue">{b}</Button>
-    {/each}
-</div>
+<section>
+
+    <div class="flex justify-evenly gap-4 py-4 md:flex-row sm:flex-col">
+        {#each backupZips as b}
+            <Button color="blue">{b}</Button>
+        {/each}
+    </div>
+</section>
